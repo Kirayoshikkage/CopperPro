@@ -1,0 +1,23 @@
+.header {
+  padding: rem(44) 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(64);
+  }
+
+  .navigation__list {
+    gap: rem(50);
+  }
+
+  .header__list {
+    display: flex;
+    gap: rem(20);
+  }
+
+  .store-link::before {
+    height: 300%;
+  }
+}

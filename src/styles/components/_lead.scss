@@ -1,0 +1,8 @@
+.lead {
+  font-size: rem(100);
+  font-family: var(--font-lighthaus), 'Arial', 'Helvetica', sans-serif;
+
+  &_light {
+    color: var(--color-white);
+  }
+}

@@ -5,4 +5,19 @@
   *
   */
   --color-white: #fff;
+  --color-bottleGreen: #0b3f37;
+
+  /*
+  *
+  * Fonts
+  *
+  */
+
+  --font-mont: 'Mont';
+  --font-lighthaus: 'Lighthaus';
+  --gradient-bottleGreen: linear-gradient(
+    90deg,
+    rgba(94, 57, 40, 1) 0%,
+    rgba(228, 161, 111, 1) 91%
+  );
 }

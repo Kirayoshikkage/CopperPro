@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  font-size: 1rem;
+
+  &_light {
+    color: var(--color-white);
+  }
+
+  &_style-btn {
+    display: inline-block;
+    font-weight: 700;
+    padding: rem(17) rem(130);
+    color: var(--color-white);
+    background: var(--gradient-bottleGreen);
+  }
+}

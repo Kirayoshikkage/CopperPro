@@ -9,5 +9,94 @@
     <script src="scripts/index.js" defer></script>
   </head>
 
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" tabindex="-1">
+          <img
+            class="logo__img"
+            src="img/logo.webp"
+            alt="Логотип: Copper Pro"
+            width="160"
+            height="43"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="list-reset navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#heart-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="img/hero__img.webp" />
+              <img
+                class="hero__img"
+                src="img/hero__img.webp"
+                alt=""
+                width="500"
+                height="850"
+              />
+            </picture>
+            <figcaption>
+              <h2 class="hero__subtitle">Хит продаж</h2>
+              <hr class="hero__line" />
+              <p class="hero__desc">Дистиллятор для эфирных масел</p>
+              <p class="hero__price">
+                <span>Цена</span>
+                <span>4 906 грн</span>
+              </p>
+              <a href="#" class="link link_style-btn hero__link">Купить</a>
+            </figcaption>
+          </figure>
+        </div>
+        <h1 class="text-reset lead lead_light hero__lead">
+          Copper
+          <br />
+          Pro
+        </h1>
+      </section>
+    </main>
+  </body>
 </html>
