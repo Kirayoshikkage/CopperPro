@@ -1,0 +1,19 @@
+.slider-btn {
+  width: auto;
+  height: auto;
+  display: block;
+  color: var(--color-black);
+  border: rem(1) solid var(--color-black);
+
+  &_prev {
+    padding: rem(12) rem(24) rem(12) rem(48);
+    border-left: none;
+    left: 0;
+  }
+
+  &_next {
+    padding: rem(12) rem(48) rem(12) rem(24);
+    border-right: none;
+    right: 0;
+  }
+}

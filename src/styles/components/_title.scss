@@ -1,0 +1,16 @@
+.title {
+  font-size: rem(50);
+  font-weight: 400;
+
+  &_mgb {
+    margin: 0 0 rem(70) 0;
+  }
+
+  &_align-center {
+    text-align: center;
+  }
+
+  &_style-dark {
+    color: var(--color-black);
+  }
+}

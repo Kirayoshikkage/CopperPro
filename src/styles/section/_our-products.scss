@@ -1,0 +1,11 @@
+.our-products {
+  &__list-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30);
+  }
+
+  &__item {
+    flex: 1 1 calc(33.33% - rem(30));
+  }
+}

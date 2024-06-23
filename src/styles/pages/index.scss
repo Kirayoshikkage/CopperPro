@@ -2,14 +2,25 @@
 
 // Vendor
 
+@import '../vendor/swiper';
+
 // Components
 
 @import '../components/link';
 @import '../components/navigation';
 @import '../components/store-link';
 @import '../components/lead';
+@import '../components/section';
+@import '../components/title';
+@import '../components/category-card';
+@import '../components/subtitle';
+@import '../components/card-product';
+@import '../components/slider-btn';
 
 // Sections
 
 @import '../section/header';
 @import '../section/index-hero';
+@import '../section/our-products';
+@import '../section/best-sales';
+@import '../section/new-item';

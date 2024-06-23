@@ -1,0 +1,18 @@
+.category-card {
+  display: block;
+  text-align: center;
+  background-color: var(--color-black);
+  background-size: cover;
+
+  $categories: 'oil', 'hydrolate', 'dishes';
+
+  @each $category in $categories {
+    &_#{$category} {
+      background-image: url('../img/#{$category}-category.webp');
+    }
+  }
+
+  &_size-large {
+    padding: rem(435) rem(48) rem(30);
+  }
+}

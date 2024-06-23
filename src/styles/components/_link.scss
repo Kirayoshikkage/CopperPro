@@ -6,6 +6,10 @@
     color: var(--color-white);
   }
 
+  &_dark {
+    color: var(--color-black);
+  }
+
   &_style-btn {
     display: inline-block;
     font-weight: 700;

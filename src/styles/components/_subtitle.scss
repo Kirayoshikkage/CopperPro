@@ -1,0 +1,13 @@
+.subtitle {
+  font-size: rem(30);
+  font-weight: 400;
+  margin: 0;
+
+  &_style-light {
+    color: var(--color-white);
+  }
+
+  &_style-dark {
+    color: var(--color-dark);
+  }
+}
