@@ -11,10 +11,15 @@
   }
 
   &_style-btn {
-    display: inline-block;
+    display: block;
+    max-width: max-content;
     font-weight: 700;
     padding: rem(17) rem(130);
     color: var(--color-white);
     background: var(--gradient-bottleGreen);
+  }
+
+  &_centered-block {
+    margin: 0 auto;
   }
 }

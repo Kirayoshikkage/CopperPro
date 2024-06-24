@@ -1,8 +1,17 @@
 import {
-  bestSalesSlader,
-  newItemSlader,
+  bestSalesSlider,
+  newItemSlider,
+  recomendationSlider,
+  discountsSlider,
+  reviewsSlider,
 } from '../helpers/configuresSliders.js';
 
-bestSalesSlader();
+bestSalesSlider();
 
-newItemSlader();
+newItemSlider();
+
+recomendationSlider();
+
+discountsSlider();
+
+reviewsSlider();

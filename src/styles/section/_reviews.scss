@@ -1,0 +1,11 @@
+.reviews {
+  position: relative;
+
+  .swiper-slide {
+    padding: rem(30);
+  }
+
+  .review {
+    box-shadow: rem(4) rem(4) rem(30) rem(4) rgba(0, 0, 0, 0.2);
+  }
+}

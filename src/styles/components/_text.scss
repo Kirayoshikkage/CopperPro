@@ -1,0 +1,8 @@
+.text {
+  font-size: rem(14);
+  line-height: 2;
+
+  &_style-dark {
+    color: var(--color-black);
+  }
+}

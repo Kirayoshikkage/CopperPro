@@ -1,0 +1,14 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: rem(18);
+  padding: rem(20) rem(30);
+
+  &__time {
+    font-weight: 700;
+  }
+
+  &__article {
+    font-weight: 700;
+  }
+}

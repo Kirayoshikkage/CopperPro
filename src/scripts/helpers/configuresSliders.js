@@ -1,9 +1,9 @@
 import Swiper, { Navigation, A11y, Keyboard } from 'swiper';
 
-function bestSalesSlader() {
-  const slider = '.best-sales .swiper';
-  const buttonNext = '.best-sales .swiper-button-next';
-  const buttonPrev = '.best-sales .swiper-button-prev';
+function defaultSliderWithItems(selectorContainer) {
+  const slider = `${selectorContainer} .swiper`;
+  const buttonNext = `${selectorContainer} .swiper-button-next`;
+  const buttonPrev = `${selectorContainer} .swiper-button-prev`;
   // eslint-disable-next-line no-unused-vars
   const swiper = new Swiper(slider, {
     modules: [Navigation, Keyboard, A11y],
@@ -25,15 +25,22 @@ function bestSalesSlader() {
   });
 }
 
-function newItemSlader() {
-  const slider = '.new-item .swiper';
-  const buttonNext = '.new-item .swiper-button-next';
-  const buttonPrev = '.new-item .swiper-button-prev';
+const bestSalesSlider = defaultSliderWithItems.bind(this, '.best-sales');
+
+const newItemSlider = defaultSliderWithItems.bind(this, '.new-item');
+
+const recomendationSlider = defaultSliderWithItems.bind(this, '.recomendation');
+
+const discountsSlider = defaultSliderWithItems.bind(this, '.discounts');
+
+function reviewsSlider() {
+  const slider = `.reviews .swiper`;
+  const buttonNext = `.reviews .swiper-button-next`;
+  const buttonPrev = `.reviews .swiper-button-prev`;
   // eslint-disable-next-line no-unused-vars
   const swiper = new Swiper(slider, {
     modules: [Navigation, Keyboard, A11y],
     slidesPerView: 3,
-    spaceBetween: 30,
     keyboard: {
       enabled: true,
     },
@@ -50,4 +57,10 @@ function newItemSlader() {
   });
 }
 
-export { bestSalesSlader, newItemSlader };
+export {
+  bestSalesSlider,
+  newItemSlider,
+  recomendationSlider,
+  discountsSlider,
+  reviewsSlider,
+};
