@@ -2,6 +2,13 @@
   text-decoration: none;
   font-size: 1rem;
 
+  &__icon {
+    stroke: var(--color-black);
+    width: rem(12);
+    height: rem(12);
+    margin-left: rem(8);
+  }
+
   &_light {
     color: var(--color-white);
   }

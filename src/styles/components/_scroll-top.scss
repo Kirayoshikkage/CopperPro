@@ -1,0 +1,14 @@
+.scroll-top {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: rem(18);
+  letter-spacing: rem(2);
+  background: var(--gradient-bottleGreen);
+
+  &_vertical-mode {
+    writing-mode: vertical-rl;
+    padding: rem(42) rem(12);
+  }
+}
