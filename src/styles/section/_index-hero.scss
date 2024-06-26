@@ -8,21 +8,26 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    height: calc(100% + rem(170));
-    background-image: url('../img/hero__bg.webp');
+    height: calc(100% + rem(210));
+    background-image: url('../img/hero-bg-desctop.webp');
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include laptop {
+      background-image: url('../img/hero-bg-laptop.webp');
+    }
   }
 
   figure {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin: 0;
   }
 
   picture {
-    transform: translateY(rem(-42));
-    max-height: rem(850);
+    transform: translateY(rem(6));
+    align-self: flex-end;
   }
 
   figcaption {
@@ -34,10 +39,19 @@
     color: var(--color-white);
     font-weight: 400;
     margin: 0 0 rem(50) 0;
+
+    @include tablet {
+      font-size: rem(60);
+      margin: 0 0 rem(30) 0;
+    }
   }
 
   &__line {
     margin: 0 0 rem(50) 0;
+
+    @include tablet {
+      margin: 0 0 rem(30) 0;
+    }
   }
 
   &__desc {
@@ -46,6 +60,11 @@
     font-weight: 700;
     color: var(--color-white);
     max-width: rem(533);
+
+    @include tablet {
+      font-size: rem(30);
+      margin: 0 0 rem(30) 0;
+    }
   }
 
   &__price {
@@ -67,7 +86,6 @@
   .lead {
     position: absolute;
     right: 0;
-    bottom: 0;
-    transform: translateY(-30%);
+    bottom: 25%;
   }
 }

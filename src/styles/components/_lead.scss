@@ -5,4 +5,8 @@
   &_light {
     color: var(--color-white);
   }
+
+  @include tablet {
+    font-size: rem(70);
+  }
 }

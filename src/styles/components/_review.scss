@@ -4,6 +4,11 @@
   gap: rem(18);
   padding: rem(20) rem(30);
 
+  &__img img {
+    width: rem(63);
+    height: rem(63);
+  }
+
   &__time {
     font-weight: 700;
   }

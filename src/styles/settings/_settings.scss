@@ -90,3 +90,15 @@ a {
     font-size: 125%;
   }
 }
+
+@include laptop {
+  .container {
+    max-width: rem(1024);
+  }
+}
+
+@include tablet {
+  .container {
+    max-width: rem(768);
+  }
+}

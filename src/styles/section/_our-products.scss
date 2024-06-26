@@ -7,5 +7,9 @@
 
   &__item {
     flex: 1 1 calc(33.33% - rem(30));
+
+    @include laptop {
+      flex: 0 1 calc(50% - rem(15));
+    }
   }
 }

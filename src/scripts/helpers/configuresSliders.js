@@ -22,6 +22,14 @@ function defaultSliderWithItems(selectorContainer) {
       nextSlideMessage: 'Следующий слайд',
       prevSlideMessage: 'Предыдущий слайд',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1440: {
+        slidesPerView: 3,
+      },
+    },
   });
 }
 
@@ -53,6 +61,17 @@ function reviewsSlider() {
       lastSlideMessage: 'Это последний слайд',
       nextSlideMessage: 'Следующий слайд',
       prevSlideMessage: 'Предыдущий слайд',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+      1440: {
+        slidesPerView: 3,
+      },
     },
   });
 }

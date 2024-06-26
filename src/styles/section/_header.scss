@@ -3,13 +3,22 @@
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: rem(64);
+    gap: rem(32) rem(64);
+  }
+
+  @include laptop {
+    .navigation {
+      flex: 1 1 100%;
+      order: 1;
+    }
   }
 
   .navigation__list {
     gap: rem(50);
+    justify-content: center;
   }
 
   .header__list {

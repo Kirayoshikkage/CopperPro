@@ -10,13 +10,19 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @include laptop {
+      flex-basis: calc(50% - rem(48));
+    }
+  }
+
+  &__img {
+    width: rem(76);
+    height: rem(76);
+    margin: 0 0 rem(8);
   }
 
   &__link {
     margin-top: auto;
-  }
-
-  &__img {
-    margin: 0 0 rem(8);
   }
 }
