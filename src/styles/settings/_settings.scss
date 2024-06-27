@@ -102,3 +102,9 @@ a {
     max-width: rem(768);
   }
 }
+
+@include small-tablet {
+  .container {
+    max-width: 100%;
+  }
+}

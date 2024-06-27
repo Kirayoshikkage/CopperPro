@@ -4,6 +4,10 @@
 
   &_mgb {
     margin: 0 0 rem(70) 0;
+
+    @include mobile {
+      margin: 0 0 rem(40);
+    }
   }
 
   &_align-center {
@@ -16,5 +20,9 @@
 
   &_style-light {
     color: var(--color-white);
+  }
+
+  @include mobile {
+    font-size: rem(36);
   }
 }

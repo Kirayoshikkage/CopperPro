@@ -4,4 +4,8 @@
   &_bg-color {
     background-color: rgba(203, 141, 98, 0.1);
   }
+
+  @include mobile {
+    padding: rem(80) 0;
+  }
 }

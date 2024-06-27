@@ -1,3 +1,21 @@
 .recomendation {
   position: relative;
+
+  @include small-tablet {
+    .card-product {
+      max-width: rem(446);
+      margin: 0 auto;
+    }
+  }
+
+  @include mobile {
+    .swiper {
+      margin-bottom: rem(120);
+    }
+
+    .slider-btn {
+      bottom: rem(150);
+      top: auto;
+    }
+  }
 }

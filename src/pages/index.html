@@ -63,17 +63,91 @@
             </a>
           </li>
         </ul>
+        <button
+          class="btn-reset burger-trigger"
+          type="button"
+          aria-expanded="false"
+        >
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+        </button>
       </div>
     </header>
     <main>
+      <div class="burger-menu">
+        <div class="burger-menu__body">
+          <div class="burger-menu__content">
+            <nav class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list-reset burger-menu__list">
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#heart-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#user-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <section class="hero">
         <div class="container">
           <figure>
             <picture>
-              <source type="image/webp" srcset="img/hero__img.webp" />
+              <source
+                media="(min-width: 48rem)"
+                type="image/webp"
+                srcset="img/hero-img-desctop.webp"
+              />
+              <source
+                media="(max-width: 47.99rem)"
+                type="image/webp"
+                srcset="img/hero-img-mobile.webp"
+              />
               <img
                 class="hero__img"
-                src="img/hero__img.webp"
+                src="img/hero-img-desctop.webp"
                 alt=""
                 width="500"
                 height="850"

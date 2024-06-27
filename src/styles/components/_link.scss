@@ -24,6 +24,12 @@
     padding: rem(17) rem(130);
     color: var(--color-white);
     background: var(--gradient-bottleGreen);
+
+    @include mobile {
+      padding: rem(16);
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   &_centered-block {

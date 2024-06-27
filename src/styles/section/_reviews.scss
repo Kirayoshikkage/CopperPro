@@ -8,4 +8,23 @@
   .review {
     box-shadow: rem(4) rem(4) rem(30) rem(4) rgba(0, 0, 0, 0.2);
   }
+
+  @include mobile {
+    .swiper-slide {
+      padding: 1rem;
+    }
+
+    .review {
+      box-shadow: rem(4) rem(4) rem(12) rem(4) rgba(0, 0, 0, 0.2);
+    }
+
+    .swiper {
+      margin-bottom: rem(120);
+    }
+
+    .slider-btn {
+      bottom: rem(100);
+      top: auto;
+    }
+  }
 }

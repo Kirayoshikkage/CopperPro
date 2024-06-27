@@ -16,17 +16,44 @@
     }
   }
 
-  .navigation__list {
-    gap: rem(50);
-    justify-content: center;
+  .logo {
+    position: relative;
+    z-index: 102;
+  }
+
+  .navigation {
+    &__list {
+      gap: rem(50);
+      justify-content: center;
+
+      @include small-tablet {
+        gap: rem(32);
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .header__list {
     display: flex;
     gap: rem(20);
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .store-link::before {
     height: 300%;
+  }
+
+  .burger-trigger {
+    display: none;
+
+    @include mobile {
+      display: grid;
+    }
   }
 }

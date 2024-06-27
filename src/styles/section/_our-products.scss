@@ -11,5 +11,9 @@
     @include laptop {
       flex: 0 1 calc(50% - rem(15));
     }
+
+    @include mobile {
+      flex: 1 1 100%;
+    }
   }
 }

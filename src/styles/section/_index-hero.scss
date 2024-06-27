@@ -12,9 +12,14 @@
     background-image: url('../img/hero-bg-desctop.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
 
     @include laptop {
       background-image: url('../img/hero-bg-laptop.webp');
+    }
+
+    @include mobile {
+      background-image: url('../img/hero-bg-mobile.webp');
     }
   }
 
@@ -23,15 +28,28 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin: 0;
+
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: rem(16);
+    }
   }
 
   picture {
     transform: translateY(rem(6));
     align-self: flex-end;
+
+    @include small-tablet {
+      max-width: rem(184);
+    }
   }
 
   figcaption {
     padding: rem(100) 0 rem(177);
+
+    @include small-tablet {
+      padding: rem(48) 0 0;
+    }
   }
 
   &__subtitle {
@@ -43,6 +61,10 @@
     @include tablet {
       font-size: rem(60);
       margin: 0 0 rem(30) 0;
+    }
+
+    @include mobile {
+      font-size: rem(48);
     }
   }
 
@@ -65,6 +87,10 @@
       font-size: rem(30);
       margin: 0 0 rem(30) 0;
     }
+
+    @include mobile {
+      font-size: rem(24);
+    }
   }
 
   &__price {
@@ -81,11 +107,27 @@
     span:last-child {
       font-weight: 700;
     }
+
+    @include mobile {
+      font-size: rem(18);
+      margin: 0 0 rem(30) 0;
+    }
   }
 
   .lead {
     position: absolute;
     right: 0;
     bottom: 25%;
+
+    @include small-tablet {
+      left: 0;
+      bottom: 15%;
+    }
+
+    @include mobile {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      bottom: 5%;
+    }
   }
 }

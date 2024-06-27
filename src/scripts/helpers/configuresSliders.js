@@ -23,6 +23,9 @@ function defaultSliderWithItems(selectorContainer) {
       prevSlideMessage: 'Предыдущий слайд',
     },
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
       768: {
         slidesPerView: 2,
       },
