@@ -6,6 +6,10 @@
     color: var(--color-white);
   }
 
+  &_dark {
+    color: var(--color-black);
+  }
+
   @include tablet {
     font-size: rem(70);
   }

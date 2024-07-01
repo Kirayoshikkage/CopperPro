@@ -1,0 +1,16 @@
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  &__item {
+    &:not(:last-child)::after {
+      content: '/';
+      padding-left: 0.5rem;
+    }
+  }
+
+  &__link_current {
+    font-weight: 700;
+  }
+}

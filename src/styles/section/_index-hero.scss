@@ -11,17 +11,17 @@
     z-index: -1;
     width: 100%;
     height: calc(100% + var(--header-height));
-    background-image: url('../img/hero-bg-desctop.webp');
+    background-image: url('../img/index-hero-bg-desctop.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 
     @include laptop {
-      background-image: url('../img/hero-bg-laptop.webp');
+      background-image: url('../img/index-hero-bg-laptop.webp');
     }
 
     @include mobile {
-      background-image: url('../img/hero-bg-mobile.webp');
+      background-image: url('../img/index-hero-bg-mobile.webp');
     }
   }
 

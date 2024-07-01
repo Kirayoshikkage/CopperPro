@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link href="styles/about.css" rel="stylesheet" />
+    <script src="scripts/about.js" defer></script>
+  </head>
+
+  <body id="body">
+    <header class="header header_bg">
+      <div class="container">
+        <a class="logo" tabindex="-1">
+          <img
+            class="logo__img"
+            src="img/logo.webp"
+            alt="Логотип: Copper Pro"
+            width="160"
+            height="43"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="list-reset navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#heart-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="btn-reset burger-trigger"
+          type="button"
+          aria-expanded="false"
+        >
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="burger-menu">
+        <div class="burger-menu__body">
+          <div class="burger-menu__content">
+            <nav class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list-reset burger-menu__list">
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#heart-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#user-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="container">
+          <ul class="list-reset crumbs">
+            <li class="crumbs__item">
+              <a href="" class="link link_dark crumbs__link">Главная</a>
+            </li>
+            <li class="crumbs__item">
+              <a
+                href=""
+                class="link link_dark crumbs__link crumbs__link_current"
+              >
+                О нас
+              </a>
+            </li>
+          </ul>
+          <div class="hero__item hero__item_quote">
+            <h1 class="lead lead_dark">О нас</h1>
+            <hr class="hero__line" />
+            <blockquote class="hero__quote">
+              <p class="hero__quote-text">Мы любим все, что сделано из меди</p>
+              <footer>
+                <div>
+                  <span class="hero__quote-author">
+                    Иван
+                    <br />
+                    Иванов
+                  </span>
+                  <cite class="text text_style-dark hero__quote-cite">
+                    Copper Pro
+                  </cite>
+                </div>
+                <img
+                  class="hero__quote-painting"
+                  src="img/painting.webp"
+                  alt=""
+                  loading="lazy"
+                  width="190"
+                  height="80"
+                />
+              </footer>
+            </blockquote>
+          </div>
+          <div class="hero__item hero__item_img">
+            <picture>
+              <source type="image/webp" srcset="img/about-hero-img.webp" />
+              <img
+                class="hero__img"
+                src="img/about-hero-img."
+                alt=""
+                loading="lazy"
+                width="550"
+                height="640"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <a class="logo" tabindex="-1">
+            <img
+              class="logo__img"
+              src="img/logo.webp"
+              alt="Логотип: Copper Pro"
+              width="160"
+              height="43"
+            />
+          </a>
+          <small class="text-reset text text_style-light copyright">
+            © 2024 “Copper Pro”
+            <br />
+            Все права защищенны
+          </small>
+          <a href="#" class="link link_light footer__link">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Навигация
+            </h3>
+            <div class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Каталог
+            </h3>
+            <div class="navigation catalog-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для эфирных масел
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для гидролатов
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Медная посуда
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Контакты
+            </h3>
+            <div class="navigation contacts-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Бажана 8-Б, Киев, 02132 Украина
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="tel:+380969906756"
+                    class="link link_light navigation__link"
+                  >
+                    +38 (096) 990 67 56
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="mailto:a.alambik@gmail.com"
+                    class="link link_light navigation__link"
+                  >
+                    a.alambik@gmail.com
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <ul class="list-reset social">
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#body" class="scroll-top scroll-top_vertical-mode">вверх</a>
+    </footer>
+  </body>
+</html>
