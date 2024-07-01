@@ -1,0 +1,5 @@
+@mixin portraitOrientation {
+  @media (orientation: portrait) {
+    @content;
+  }
+}

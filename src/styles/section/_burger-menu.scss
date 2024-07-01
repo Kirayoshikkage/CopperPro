@@ -6,11 +6,16 @@
   &__body {
     overflow: hidden;
     height: auto;
+    padding: rem(135) rem(16) rem(48);
     opacity: 0;
     transform: translateY(-10%);
     transition-property: opacity, transform;
     transition-duration: $transitionDuration;
     background-color: var(--color-black);
+
+    @include landscapeOrientation {
+      height: 100%;
+    }
   }
 
   &.active {
@@ -21,7 +26,10 @@
   }
 
   &__content {
-    padding: rem(135) rem(16) rem(48);
+    @include landscapeOrientation {
+      overflow: auto;
+      max-height: 100%;
+    }
   }
 
   .navigation {
@@ -32,12 +40,6 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-  }
-
-  .store-link::before {
-    width: 200%;
-    right: 0;
-    left: auto;
   }
 
   &__list {

@@ -8,6 +8,7 @@ import {
 import BurgerMenu from '../components/BurgerMenu.js';
 import FocusLock from '../components/FocusLock.js';
 import getFontSizeBody from '../helpers/getFontSizeBody.js';
+import updateVarHeaderHeightForIndexHero from '../helpers/updateVarHeaderHeightForIndexHero.js';
 
 const focusLock = new FocusLock({
   exception: ['.burger-menu', '.header .burger-trigger'],
@@ -31,6 +32,8 @@ const burgerMenu = new BurgerMenu({
 });
 
 burgerMenu.init();
+
+updateVarHeaderHeightForIndexHero();
 
 bestSalesSlider();
 

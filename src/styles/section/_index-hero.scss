@@ -1,6 +1,8 @@
 .hero {
   position: relative;
 
+  --header-height: 210px;
+
   &::before {
     content: '';
     position: absolute;
@@ -8,7 +10,7 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    height: calc(100% + rem(210));
+    height: calc(100% + var(--header-height));
     background-image: url('../img/hero-bg-desctop.webp');
     background-repeat: no-repeat;
     background-size: cover;

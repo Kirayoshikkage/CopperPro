@@ -7,12 +7,9 @@
     justify-content: space-between;
     align-items: center;
     gap: rem(32) rem(64);
-  }
 
-  @include laptop {
-    .navigation {
-      flex: 1 1 100%;
-      order: 1;
+    @include mobile {
+      gap: 2rem;
     }
   }
 
@@ -23,12 +20,18 @@
 
   .navigation {
     &__list {
+      flex-wrap: wrap;
       gap: rem(50);
       justify-content: center;
 
       @include small-tablet {
         gap: rem(32);
       }
+    }
+
+    @include laptop {
+      flex: 1 1 100%;
+      order: 1;
     }
 
     @include mobile {
