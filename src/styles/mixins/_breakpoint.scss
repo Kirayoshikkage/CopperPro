@@ -53,13 +53,7 @@
 }
 
 @mixin xl {
-  @media (min-width: rem(1200)) {
-    @content;
-  }
-}
-
-@mixin xxl {
-  @media (min-width: rem(1400)) {
+  @media (min-width: rem(1440)) {
     @content;
   }
 }

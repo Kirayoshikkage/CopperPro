@@ -1,0 +1,45 @@
+.our-clients {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: rem(64) rem(120);
+
+    @include laptop {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__item:first-child {
+    flex: 0 1 rem(520);
+  }
+
+  &__counter {
+    background-image: url('../img/our-clients-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    span {
+      display: block;
+      color: #000;
+      background: #fff;
+      mix-blend-mode: lighten;
+      font-weight: 700;
+      overflow: hidden;
+
+      &:first-child {
+        font-size: rem(50);
+        font-style: italic;
+      }
+
+      &:last-child {
+        font-size: rem(250);
+
+        @include small-tablet {
+          font-size: rem(150);
+        }
+      }
+    }
+  }
+}

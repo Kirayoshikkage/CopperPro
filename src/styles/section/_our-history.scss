@@ -1,0 +1,61 @@
+.our-history {
+  position: relative;
+  background-image: url('../img/our-history-bg-desctop.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include laptop {
+    background-image: url('../img/our-history-bg-laptop.webp');
+  }
+
+  &__content {
+    max-width: rem(900);
+    margin: 0 auto;
+
+    @include laptop {
+      max-width: rem(800);
+    }
+  }
+
+  .text {
+    column-count: 2;
+    column-gap: rem(40);
+    font-weight: 300;
+
+    br {
+      margin: 0 0 1rem;
+    }
+
+    @include small-tablet {
+      column-count: 1;
+      text-align: justify;
+    }
+  }
+
+  &__company-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--color-white);
+    font-size: rem(145);
+    line-height: 1;
+    font-weight: 400;
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    max-height: rem(560);
+
+    @include laptop {
+      max-height: 100%;
+      font-size: rem(120);
+    }
+
+    @include tablet {
+      font-size: rem(48);
+      writing-mode: horizontal-tb;
+      transform: none;
+      left: 1rem;
+      bottom: 1rem;
+    }
+  }
+}
