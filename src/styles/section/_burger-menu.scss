@@ -5,13 +5,13 @@
 
   &__body {
     overflow: hidden;
-    height: auto;
     padding: rem(135) rem(16) rem(48);
+    height: auto;
+    background-color: var(--color-black);
     opacity: 0;
     transform: translateY(-10%);
     transition-property: opacity, transform;
     transition-duration: $transitionDuration;
-    background-color: var(--color-black);
 
     @include landscapeOrientation {
       height: 100%;
@@ -36,9 +36,9 @@
     margin: 0 0 rem(32);
 
     &__list {
-      gap: rem(32);
       flex-wrap: wrap;
       justify-content: space-between;
+      gap: rem(32);
     }
   }
 

@@ -193,7 +193,6 @@ const img = () => {
   return gulp
     .src(path.src.img)
     .pipe(newer(path.build.img))
-    .pipe(gulp.dest(path.build.img))
     .pipe(converterToWebp())
     .pipe(gulp.dest(path.build.img))
     .pipe(browserSync.stream());

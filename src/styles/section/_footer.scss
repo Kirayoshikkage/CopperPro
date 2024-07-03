@@ -5,14 +5,14 @@
 
   .scroll-top {
     position: absolute;
-    bottom: 0;
     right: rem(64);
+    bottom: 0;
   }
 
   .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: rem(64);
 
     @include laptop {
@@ -23,9 +23,9 @@
 
   &__item:first-child {
     display: flex;
+    flex: 0 0 rem(270);
     flex-direction: column;
     gap: rem(24);
-    flex: 0 0 rem(270);
 
     @include laptop {
       flex: 0 0 auto;

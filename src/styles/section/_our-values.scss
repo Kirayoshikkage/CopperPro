@@ -11,8 +11,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: rem(40);
       padding: rem(48) 0;
+      gap: rem(40);
 
       @include tablet {
         padding: 0;
@@ -44,5 +44,11 @@
   &__icon {
     width: rem(60);
     height: rem(60);
+  }
+
+  @media (max-width: rem(320)) {
+    .subtitle {
+      word-break: break-all;
+    }
   }
 }

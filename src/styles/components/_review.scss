@@ -1,10 +1,10 @@
 .review {
   display: flex;
   flex-direction: column;
-  gap: rem(18);
   padding: rem(20) rem(30);
+  gap: rem(18);
 
-  &__img img {
+  &__img {
     width: rem(63);
     height: rem(63);
   }

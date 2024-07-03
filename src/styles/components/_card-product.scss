@@ -3,8 +3,8 @@
 
   &__like-btn {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     padding: rem(17) rem(10);
     background-color: var(--color-white);
   }
@@ -29,12 +29,12 @@
 
   &__price {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: rem(24);
-    color: var(--color-black);
-    font-size: rem(20);
+    justify-content: space-between;
     margin: 0 0 rem(32);
+    font-size: rem(20);
+    color: var(--color-black);
+    gap: rem(24);
   }
 
   &__link {

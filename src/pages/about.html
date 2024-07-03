@@ -174,17 +174,13 @@
             </blockquote>
           </div>
           <div class="hero__item hero__item_img">
-            <picture>
-              <source type="image/webp" srcset="img/about-hero-img.webp" />
-              <img
-                class="hero__img"
-                src="img/about-hero-img.png"
-                alt=""
-                loading="lazy"
-                width="550"
-                height="640"
-              />
-            </picture>
+            <img
+              class="hero__img"
+              src="img/about-hero-img.webp"
+              alt=""
+              width="550"
+              height="640"
+            />
           </div>
         </div>
       </section>
@@ -200,7 +196,7 @@
           <div class="our-clients__item">
             <p class="text-reset our-clients__counter">
               <span>Счётчик клиентов</span>
-              <span>12 784</span>
+              <span>20 840</span>
             </p>
           </div>
         </div>
@@ -253,14 +249,15 @@
             </p>
           </div>
           <div class="our-geography__item">
+            <!-- 36rem - 576px -->
             <picture>
               <source
-                type="image/webp"
-                srcset="img/our-geography-img-desctop.webp"
+                media="(max-width: 35.99rem)"
+                srcset="img/our-geography-img-mobile.webp"
               />
               <img
                 class="our-geography__img"
-                src="img/our-geography-img-desctop.png"
+                src="img/our-geography-img-desctop.webp"
                 alt=""
                 loading="lazy"
                 width="1070"
@@ -274,19 +271,10 @@
         <div class="container">
           <div class="our-values__item">
             <picture>
-              <source
-                media="(min-width: 64rem)"
-                type="image/webp"
-                srcset="img/our-values-img.webp"
-              />
-              <source
-                media="(max-width: 63.99rem)"
-                type="image/webp"
-                srcset="img/stub.webp"
-              />
+              <source media="(max-width: 63.99rem)" srcset="img/stub.webp" />
               <img
                 class="our-values__img"
-                src="img/our-values-img.png"
+                src="img/our-values-img.webp"
                 alt=""
                 loading="lazy"
                 width="684"

@@ -3,8 +3,8 @@
 
   @include small-tablet {
     .card-product {
-      max-width: rem(446);
       margin: 0 auto;
+      max-width: rem(446);
     }
   }
 
@@ -14,8 +14,8 @@
     }
 
     .slider-btn {
-      bottom: rem(150);
       top: auto;
+      bottom: rem(150);
     }
   }
 }

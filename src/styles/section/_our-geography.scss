@@ -1,13 +1,17 @@
 .our-geography {
   .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: rem(80);
 
     @include laptop {
       flex-direction: column;
       gap: rem(48);
+    }
+
+    @include mobile {
+      padding: 0;
     }
   }
 
@@ -17,6 +21,10 @@
 
       @include laptop {
         max-width: 100%;
+      }
+
+      @include mobile {
+        padding: 0 1rem;
       }
     }
   }
