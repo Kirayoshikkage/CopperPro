@@ -1,16 +1,16 @@
 .our-history {
   position: relative;
   background-image: url('../img/our-history-bg-desctop.webp');
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 
   @include laptop {
     background-image: url('../img/our-history-bg-laptop.webp');
   }
 
   &__content {
-    max-width: rem(900);
     margin: 0 auto;
+    max-width: rem(900);
 
     @include laptop {
       max-width: rem(800);
@@ -34,16 +34,16 @@
 
   &__company-name {
     position: absolute;
-    bottom: 0;
     left: 0;
-    color: var(--color-white);
+    bottom: 0;
+    margin: 0;
+    max-height: rem(560);
+    font-weight: 400;
     font-size: rem(145);
     line-height: 1;
-    font-weight: 400;
-    margin: 0;
     writing-mode: vertical-rl;
+    color: var(--color-white);
     transform: rotate(180deg);
-    max-height: rem(560);
 
     @include laptop {
       max-height: 100%;
@@ -51,11 +51,11 @@
     }
 
     @include tablet {
+      left: 1rem;
+      bottom: 1rem;
       font-size: rem(48);
       writing-mode: horizontal-tb;
       transform: none;
-      left: 1rem;
-      bottom: 1rem;
     }
   }
 }

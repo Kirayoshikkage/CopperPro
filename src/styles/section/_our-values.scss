@@ -19,8 +19,8 @@
       }
     }
 
-    @include tablet {
-      &:first-child {
+    &:first-child {
+      @include tablet {
         display: none;
       }
     }

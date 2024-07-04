@@ -29,23 +29,21 @@
   &__item {
     flex: 1 1 calc(50% - rem(90));
 
-    &_quote {
-      padding: rem(120) 0;
-    }
-
     @include laptop {
       flex: 1 1 auto;
+    }
+  }
 
-      &_quote {
-        margin: 0 0 rem(-100);
-        padding: 0;
-      }
+  &__item_quote {
+    padding: rem(120) 0;
+
+    @include laptop {
+      margin: 0 0 rem(-100);
+      padding: 0;
     }
 
     @include mobile {
-      &_quote {
-        margin: 0 0 var(--mgb);
-      }
+      margin: 0 0 var(--mgb);
     }
   }
 

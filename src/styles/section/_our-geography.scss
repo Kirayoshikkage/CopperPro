@@ -15,17 +15,15 @@
     }
   }
 
-  &__item {
-    &:first-child {
-      max-width: rem(365);
+  &__item:first-child {
+    max-width: rem(365);
 
-      @include laptop {
-        max-width: 100%;
-      }
+    @include laptop {
+      max-width: 100%;
+    }
 
-      @include mobile {
-        padding: 0 1rem;
-      }
+    @include mobile {
+      padding: 0 1rem;
     }
   }
 

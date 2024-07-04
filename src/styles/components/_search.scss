@@ -1,0 +1,22 @@
+.search {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: rem(16);
+
+  &__input {
+    flex: 0 1 rem(400);
+    border-bottom: rem(1) solid var(--color-black);
+    padding: 0 0 rem(12) 0;
+    width: 100%;
+    font-size: rem(20);
+    color: var(--color-black);
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: rem(28);
+    height: rem(28);
+    fill: var(--color-black);
+  }
+}
