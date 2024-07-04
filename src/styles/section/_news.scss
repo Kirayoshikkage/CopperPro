@@ -1,0 +1,20 @@
+.news {
+  padding: rem(40) 0 rem(80);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(32);
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .card-news {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: rem(24);
+  }
+}

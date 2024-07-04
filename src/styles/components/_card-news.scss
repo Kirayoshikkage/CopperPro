@@ -1,0 +1,43 @@
+.card-news {
+  &__item:first-child {
+    position: relative;
+  }
+
+  &__item:last-child {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: rem(24);
+  }
+
+  &__time {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: rem(6) rem(12);
+    font-weight: 700;
+    background-color: var(--color-bottleGreen);
+  }
+
+  &__img {
+    width: 100%;
+    min-height: rem(210);
+  }
+
+  &__title {
+    position: absolute;
+    left: rem(24);
+    bottom: rem(24);
+    font-weight: 400;
+    font-size: rem(22);
+    color: var(--color-white);
+
+    @include mobile {
+      font-size: rem(20);
+    }
+  }
+
+  .link {
+    margin: auto 0 0;
+  }
+}

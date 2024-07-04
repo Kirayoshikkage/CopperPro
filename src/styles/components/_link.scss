@@ -1,12 +1,12 @@
 .link {
-  text-decoration: none;
   font-size: 1rem;
+  text-decoration: none;
 
   &__icon {
-    stroke: var(--color-black);
+    margin-left: rem(8);
     width: rem(12);
     height: rem(12);
-    margin-left: rem(8);
+    stroke: var(--color-black);
   }
 
   &_light {
@@ -19,9 +19,9 @@
 
   &_style-btn {
     display: block;
+    padding: rem(17) rem(130);
     max-width: max-content;
     font-weight: 700;
-    padding: rem(17) rem(130);
     color: var(--color-white);
     background: var(--gradient-bottleGreen);
 

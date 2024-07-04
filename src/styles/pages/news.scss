@@ -17,16 +17,14 @@
 @import '../components/social';
 @import '../components/scroll-top';
 @import '../components/crumbs';
-@import '../components/category-card';
-@import '../components/search';
+@import '../components/card-news';
 
 // Sections
 
 @import '../section/header';
 @import '../section/burger-menu';
-@import '../section/catalog-hero';
-@import '../section/filters';
-@import '../section/catalog';
+@import '../section/news-hero';
+@import '../section/news';
 @import '../section/footer';
 
 body,

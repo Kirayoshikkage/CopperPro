@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
-    <link href="styles/catalog.css" rel="stylesheet" />
-    <script src="scripts/catalog.js" defer></script>
+    <link href="styles/news.css" rel="stylesheet" />
+    <script src="scripts/news.js" defer></script>
   </head>
 
   <body id="body">
@@ -142,58 +142,193 @@
                 href=""
                 class="link link_dark crumbs__link crumbs__link_current"
               >
-                Каталог
+                Новости
               </a>
             </li>
           </ul>
-          <h1 class="text-reset lead lead_dark">Каталог</h1>
+          <h1 class="text-reset lead lead_dark">Новости</h1>
         </div>
       </section>
-      <section class="filters">
+      <section class="news">
         <div class="container">
-          <h2 class="title title_style-dark">Фильтры</h2>
-          <form class="filters__form">
-            <div class="search">
-              <label for="search" class="visually-hidden">Поиск</label>
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Поиск"
-                class="input-reset search__input"
-              />
-              <svg class="search__icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </div>
-            <div class="filters__item">
-              <label for="category" class="filters__label">Категории:</label>
-              <select
-                name="category"
-                id="category"
-                class="btn-reset filters__select"
-              >
-                <option value="0">Показать всё</option>
-                <option value="1">Для эфирных масел</option>
-                <option value="2">Для гидролатов</option>
-                <option value="3">Медная посуда</option>
-              </select>
-            </div>
-            <div class="filters__item">
-              <label for="sort" class="filters__label">Сортировка:</label>
-              <select name="sort" id="sort" class="btn-reset filters__select">
-                <option value="0">Сначала популярные</option>
-                <option value="1">Сначала дорогие</option>
-                <option value="2">Сначала недорогие</option>
-              </select>
-            </div>
-          </form>
-        </div>
-      </section>
-      <section class="catalog">
-        <div class="container">
-          <div class="catalog__item"></div>
-          <div class="catalog__item">
+          <div class="news__item">
+            <ul class="list-reset news__list">
+              <li>
+                <article class="card-news">
+                  <div class="card-news__item">
+                    <time
+                      class="text text_style-light card-news__time"
+                      datetime="2021-10-27"
+                    >
+                      2021.10.27
+                    </time>
+                    <!-- 36 rem - 576px -->
+                    <picture>
+                      <source
+                        media="(max-width: 35.99rem)"
+                        srcset="img/news-img-mobile.webp"
+                      />
+                      <img
+                        class="card-news__img"
+                        src="img/news-img-desctop.webp"
+                        alt=""
+                        loading="lazy"
+                        width="683"
+                        height="210"
+                      />
+                    </picture>
+                    <h2 class="text-reset card-news__title">
+                      Эфирные масла для улучшения сна
+                    </h2>
+                  </div>
+                  <div class="card-news__item">
+                    <p class="text-reset text text_style-dark">
+                      Пользу эфирных масел трудно переоценить. Они, безусловно,
+                      полезны для человека, но если говорить о домашних
+                      животных, то здесь возникают некоторые нюансы. Необходимо
+                      строго придерживаться определенных правил.
+                    </p>
+                    <a href="#" class="link link_dark card-news__link">
+                      <span>Подробнее</span>
+                      <svg class="link__icon">
+                        <use xlink:href="img/sprite.svg#redirect-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="card-news">
+                  <div class="card-news__item">
+                    <time
+                      class="text text_style-light card-news__time"
+                      datetime="2021-10-27"
+                    >
+                      2021.10.27
+                    </time>
+                    <picture>
+                      <source
+                        media="(max-width: 35.99rem)"
+                        srcset="img/news-img-mobile.webp"
+                      />
+                      <img
+                        class="card-news__img"
+                        src="img/news-img-desctop.webp"
+                        alt=""
+                        loading="lazy"
+                        width="683"
+                        height="210"
+                      />
+                    </picture>
+                    <h2 class="text-reset card-news__title">
+                      Эфирные масла для улучшения сна
+                    </h2>
+                  </div>
+                  <div class="card-news__item">
+                    <p class="text-reset text text_style-dark">
+                      Пользу эфирных масел трудно переоценить. Они, безусловно,
+                      полезны для человека, но если говорить о домашних
+                      животных, то здесь возникают некоторые нюансы. Необходимо
+                      строго придерживаться определенных правил.
+                    </p>
+                    <a href="#" class="link link_dark card-news__link">
+                      <span>Подробнее</span>
+                      <svg class="link__icon">
+                        <use xlink:href="img/sprite.svg#redirect-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="card-news">
+                  <div class="card-news__item">
+                    <time
+                      class="text text_style-light card-news__time"
+                      datetime="2021-10-27"
+                    >
+                      2021.10.27
+                    </time>
+                    <picture>
+                      <source
+                        media="(max-width: 35.99rem)"
+                        srcset="img/news-img-mobile.webp"
+                      />
+                      <img
+                        class="card-news__img"
+                        src="img/news-img-desctop.webp"
+                        alt=""
+                        loading="lazy"
+                        width="683"
+                        height="210"
+                      />
+                    </picture>
+                    <h2 class="text-reset card-news__title">
+                      Эфирные масла для улучшения сна
+                    </h2>
+                  </div>
+                  <div class="card-news__item">
+                    <p class="text-reset text text_style-dark">
+                      Пользу эфирных масел трудно переоценить. Они, безусловно,
+                      полезны для человека, но если говорить о домашних
+                      животных, то здесь возникают некоторые нюансы. Необходимо
+                      строго придерживаться определенных правил.
+                    </p>
+                    <a href="#" class="link link_dark card-news__link">
+                      <span>Подробнее</span>
+                      <svg class="link__icon">
+                        <use xlink:href="img/sprite.svg#redirect-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="card-news">
+                  <div class="card-news__item">
+                    <time
+                      class="text text_style-light card-news__time"
+                      datetime="2021-10-27"
+                    >
+                      2021.10.27
+                    </time>
+                    <picture>
+                      <source
+                        media="(max-width: 35.99rem)"
+                        srcset="img/news-img-mobile.webp"
+                      />
+                      <img
+                        class="card-news__img"
+                        src="img/news-img-desctop.webp"
+                        alt=""
+                        loading="lazy"
+                        width="683"
+                        height="210"
+                      />
+                    </picture>
+                    <h2 class="text-reset card-news__title">
+                      Эфирные масла для улучшения сна
+                    </h2>
+                  </div>
+                  <div class="card-news__item">
+                    <p class="text-reset text text_style-dark">
+                      Пользу эфирных масел трудно переоценить. Они, безусловно,
+                      полезны для человека, но если говорить о домашних
+                      животных, то здесь возникают некоторые нюансы. Необходимо
+                      строго придерживаться определенных правил.
+                    </p>
+                    <a href="#" class="link link_dark card-news__link">
+                      <span>Подробнее</span>
+                      <svg class="link__icon">
+                        <use xlink:href="img/sprite.svg#redirect-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div hidden class="news__item">
             <h2 class="text-reset title title_style-dark title_align-center">
               Увы , мы не смогли ничего найти &#128577;
             </h2>
