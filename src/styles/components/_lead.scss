@@ -1,6 +1,7 @@
 .lead {
   font-family: var(--font-lighthaus), 'Arial', 'Helvetica', sans-serif;
   font-size: rem(100);
+  word-wrap: break-word;
 
   &_light {
     color: var(--color-white);

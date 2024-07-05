@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link href="styles/news_page.css" rel="stylesheet" />
+    <script src="scripts/news_page.js" defer></script>
+  </head>
+
+  <body id="body">
+    <header class="header header_bg">
+      <div class="container">
+        <a class="logo" tabindex="-1">
+          <img
+            class="logo__img"
+            src="img/logo.webp"
+            alt="Логотип: Copper Pro"
+            width="160"
+            height="43"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="list-reset navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#heart-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="btn-reset burger-trigger"
+          type="button"
+          aria-expanded="false"
+        >
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="burger-menu">
+        <div class="burger-menu__body">
+          <div class="burger-menu__content">
+            <nav class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list-reset burger-menu__list">
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#heart-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#user-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="news-info">
+        <div class="container">
+          <ul class="list-reset crumbs">
+            <li class="crumbs__item">
+              <a href="" class="link link_dark crumbs__link">Главная</a>
+            </li>
+            <li class="crumbs__item">
+              <a href="" class="link link_dark crumbs__link">Новости</a>
+            </li>
+            <li class="crumbs__item">
+              <a
+                href=""
+                class="link link_dark crumbs__link crumbs__link_current"
+              >
+                Эфирные масла для улучшения сна
+              </a>
+            </li>
+          </ul>
+          <h1 class="text-reset lead lead_dark">
+            Эфирные масла для улучшения сна
+          </h1>
+          <time
+            class="text text_style-light news-info__time"
+            datetime="2021-10-27"
+          >
+            2021.10.27
+          </time>
+          <!-- 64rem - 1024px -->
+          <!-- 36rem - 576px -->
+          <picture>
+            <source
+              media="(max-width: 35.99rem)"
+              srcset="img/news-info-img-mobile.webp"
+            />
+            <source
+              media="(max-width: 63.99rem)"
+              srcset="img/news-info-img-tablet.webp"
+            />
+            <img
+              class="news-info__img"
+              src="img/news-info-img-desctop.webp"
+              alt=""
+              width="1400"
+              height="430"
+            />
+          </picture>
+          <div class="news-info__desc">
+            <p class="text-reset text text_style-dark">
+              Проблемы со сном и засыпанием многим знакомы не понаслышке. У
+              каждого есть свой способ борьбы с этой проблемой, но большинство
+              уже оценили успокаивающие свойства эфирных масел. Экстракты
+              некоторых растений благотворно влияют на большинство систем
+              организма, снимают стресс и избавляют от негативных эмоций.
+              Правильное использование эфира поможет расслабиться и сделать
+              ночной отдых полноценным. Самым лучшим и приятным лекарством от
+              усталости и бессонницы являются эфирные масла лаванды, ладана и
+              мелиссы.
+            </p>
+            <h2 class="title title_style-dark">Лавандовое масло</h2>
+            <p class="text-reset text text_style-dark">
+              Лаванда – самое распространенное растение, для создания эфира. И
+              это не удивительно, она обладает действительно волшебными
+              свойствами:
+            </p>
+            <ul>
+              <li class="text text_style-dark">
+                способна избавить от агрессии, раздражительности;
+              </li>
+              <li class="text text_style-dark">снимает стресс;</li>
+              <li class="text text_style-dark">
+                помогает избавиться от негативных мыслей и эмоций;
+              </li>
+              <li class="text text_style-dark">помогает успокоиться;</li>
+              <li class="text text_style-dark">помогает достичь гармонии.</li>
+            </ul>
+            <p class="text-reset text text_style-dark">
+              Лавандовое эфирное масло нормализует работу нервной и кровеносной
+              систем, стимулирует выработку серотонина и стабилизирует
+              гормональный фон. Этим и объясняются ее чудодейственные свойства.
+              Кстати, эффективность именно этого эфира в борьбе с бессонницей
+              доказана в ходе практических исследований.
+            </p>
+            <h2 class="title title_style-dark">Эфирное масло ладана</h2>
+            <p class="text-reset text text_style-dark">
+              Запах ладана обладает антидепрессивным эффектом, но это не все, на
+              что способен этот эфир:
+            </p>
+            <ul>
+              <li class="text text_style-dark">
+                масло ладана успокаивает тело, помогает ему расслабиться
+              </li>
+              <li class="text text_style-dark">снимает напряжение</li>
+              <li class="text text_style-dark">
+                помогает избавиться от стресса
+              </li>
+            </ul>
+            <p class="text-reset text text_style-dark">
+              Этот компонент просто незаменим при борьбе с бессонницей и ночными
+              страхами.
+            </p>
+            <h2 class="title title_style-dark">Масло мелиссы</h2>
+            <p class="text-reset text text_style-dark">
+              Эфирное масло мелиссы прекрасно подойдет для тех, кому трудно
+              полностью расслабиться. Оно влияет на многие системы в организме:
+            </p>
+            <ul>
+              <li class="text text_style-dark">нормализует сердечный ритм</li>
+              <li class="text text_style-dark">
+                стабилизирует функции нервной и сердечно-сосудистой систем
+              </li>
+              <li class="text text_style-dark">
+                благоприятно влияет на работу мозга
+              </li>
+              <li class="text text_style-dark">
+                снимает физическое и эмоциональное напряжение.
+              </li>
+            </ul>
+            <p class="text-reset text text_style-dark">
+              Это именно те факторы, которые мешают крепкому сну. Поборов их –
+              вы забудете о бессоннице.
+            </p>
+            <h2 class="title title_style-dark">Как использовать</h2>
+            <p class="text-reset text text_style-dark">
+              Самый популярный метод применения эфирных масел – ароматерапия.
+              Достаточно несколько капель, чтобы достичь желаемого эффекта.
+              Приобрести эфир можно в любом специализированном магазине либо же
+              сделать самостоятельно – с помощью дистиллятора. Домашний эфир
+              ничем не уступает покупному, его также можно использовать для
+              аромаламп, расслабляющих ванн, массажей и т.д. Главное, найти эфир
+              подходящий именно вам, и тогда вы будете не только получать
+              удовольствие от ароматерапии, но и оздоровите свой организм. Вы
+              можете не сомневаться в качестве эфирного масла, которое сделаете
+              самостоятельно. Процесс создания очень простой и вы гарантированно
+              получите нужный эффект.
+            </p>
+          </div>
+          <hr class="news-info__line" />
+          <div class="news-info__footer">
+            <button
+              class="btn-reset link link_dark news-info__slide-btn news-info__slide-btn_prev"
+            >
+              <svg>
+                <use xlink:href="img/sprite.svg#redirect-icon"></use>
+              </svg>
+              <span>Эфирные масла для улучшения сна</span>
+            </button>
+            <div class="share-btns">
+              <h2 class="text-reset share-btns__title">Поделиться</h2>
+              <ul class="list-reset share-btns__list">
+                <li>
+                  <button
+                    class="btn-reset share-btns__btn"
+                    onClick='window.open("https://www.facebook.com/sharer.php?u=АДРЕС_СТРАНИЦЫ","sharer","status=0,toolbar=0,width=650,height=500");'
+                  >
+                    <svg class="share-btns__icon">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="btn-reset share-btns__btn"
+                    onClick='window.open("https://twitter.com/intent/tweet?text=ТАЙТЛ_СТРАНИЦЫ. ОПИСАНИЕ. СССЫЛКА","sharer","status=0,toolbar=0,width=650,height=500");'
+                  >
+                    <svg class="share-btns__icon">
+                      <use xlink:href="img/sprite.svg#twitter"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="btn-reset link link_dark news-info__slide-btn news-info__slide-btn_next"
+            >
+              <span>Эфирные масла для улучшения сна</span>
+              <svg>
+                <use xlink:href="img/sprite.svg#redirect-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <a class="logo" tabindex="-1">
+            <img
+              class="logo__img"
+              src="img/logo.webp"
+              alt="Логотип: Copper Pro"
+              width="160"
+              height="43"
+            />
+          </a>
+          <small class="text-reset text text_style-light copyright">
+            © 2024 “Copper Pro”
+            <br />
+            Все права защищенны
+          </small>
+          <a href="#" class="link link_light footer__link">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Навигация
+            </h3>
+            <div class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Каталог
+            </h3>
+            <div class="navigation catalog-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для эфирных масел
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для гидролатов
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Медная посуда
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Контакты
+            </h3>
+            <div class="navigation contacts-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Бажана 8-Б, Киев, 02132 Украина
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="tel:+380969906756"
+                    class="link link_light navigation__link"
+                  >
+                    +38 (096) 990 67 56
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="mailto:a.alambik@gmail.com"
+                    class="link link_light navigation__link"
+                  >
+                    a.alambik@gmail.com
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <ul class="list-reset social">
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#body" class="scroll-top scroll-top_vertical-mode">вверх</a>
+    </footer>
+  </body>
+</html>
