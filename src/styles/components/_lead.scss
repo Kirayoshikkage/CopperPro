@@ -1,7 +1,14 @@
 .lead {
   font-family: var(--font-lighthaus), 'Arial', 'Helvetica', sans-serif;
-  font-size: rem(100);
   word-wrap: break-word;
+
+  &_large {
+    font-size: rem(100);
+
+    @include tablet {
+      font-size: rem(70);
+    }
+  }
 
   &_light {
     color: var(--color-white);
@@ -9,9 +16,5 @@
 
   &_dark {
     color: var(--color-black);
-  }
-
-  @include tablet {
-    font-size: rem(70);
   }
 }

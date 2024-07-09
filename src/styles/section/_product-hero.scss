@@ -7,12 +7,29 @@
       'crumbs crumbs'
       'slider info'
       'desc desc';
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, calc(50% - rem(20)));
     gap: rem(80) rem(40);
+
+    @include tablet {
+      grid-template-areas:
+        'crumbs'
+        'slider'
+        'info'
+        'desc';
+      grid-template-columns: 100%;
+    }
   }
 
   .crumbs {
     grid-area: crumbs;
+  }
+
+  .lead {
+    font-size: rem(50);
+
+    @include mobile {
+      font-size: rem(42);
+    }
   }
 
   &__item {
@@ -35,8 +52,6 @@
   }
 
   .swiper {
-    max-width: rem(668);
-
     &_main {
       margin-bottom: rem(40);
     }
@@ -92,27 +107,41 @@
   }
 
   &__title-price {
-    margin: 0 rem(64) 0 0;
-    font-size: rem(40);
+    margin: 0 rem(16) 0 0;
+    font-size: rem(32);
+
+    @include mobile {
+      font-size: rem(24);
+    }
   }
 
   &__price {
     font-weight: 700;
-    font-size: rem(48);
+    font-size: rem(40);
     color: #9b0000;
+
+    @include mobile {
+      font-size: rem(32);
+    }
   }
 
   &__discount {
-    display: inline-block;
-    font-size: rem(24);
+    position: absolute;
+    left: rem(32);
+    top: rem(-16);
+    font-size: rem(18);
     text-decoration: line-through;
     opacity: 0.5;
-    transform: rotate(-5deg);
+    transform: translateX(100%);
   }
 
   &__form {
     display: flex;
     gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__input {

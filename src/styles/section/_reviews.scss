@@ -11,20 +11,32 @@
 
   &__form {
     display: flex;
-    align-items: flex-end;
     justify-content: end;
     gap: 1rem;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__input {
-    flex: 0 1 rem(500);
+    flex: 0 1 rem(400);
     border-bottom: rem(1) solid var(--color-black);
     padding: 0 1rem rem(8);
     resize: none;
+
+    @include small-tablet {
+      flex: 1 1 content;
+    }
   }
 
   .button {
+    align-self: flex-end;
     padding: 1rem 3rem;
+
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   @include mobile {
@@ -42,7 +54,7 @@
 
     .slider-btn {
       top: auto;
-      bottom: rem(100);
+      bottom: rem(292);
     }
   }
 }

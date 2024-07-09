@@ -94,6 +94,14 @@ function pageProductSlider() {
     },
     spaceBetween: 16,
     slidesPerView: 6,
+    breakpoints: {
+      0: {
+        slidesPerView: 4,
+      },
+      576: {
+        slidesPerView: 6,
+      },
+    },
     watchSlidesProgress: true,
   });
   // eslint-disable-next-line no-unused-vars

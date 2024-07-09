@@ -4,4 +4,10 @@
   .crumbs {
     margin: 0 0 rem(40);
   }
+
+  .lead {
+    @include mobile {
+      font-size: rem(50);
+    }
+  }
 }

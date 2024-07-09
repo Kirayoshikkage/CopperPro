@@ -1,6 +1,7 @@
 .title {
   font-weight: 400;
   font-size: rem(50);
+  word-wrap: break-word;
 
   &_mgb {
     margin: 0 0 rem(70) 0;
