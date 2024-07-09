@@ -1,0 +1,9 @@
+.button {
+  font-weight: 700;
+  font-size: rem(18);
+
+  &_style-dark {
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+}

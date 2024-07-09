@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link href="styles/product.css" rel="stylesheet" />
+    <script src="scripts/product.js" defer></script>
+  </head>
+
+  <body id="body">
+    <header class="header header_bg">
+      <div class="container">
+        <a class="logo" tabindex="-1">
+          <img
+            class="logo__img"
+            src="img/logo.webp"
+            alt="Логотип: Copper Pro"
+            width="160"
+            height="43"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="list-reset navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#heart-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="btn-reset burger-trigger"
+          type="button"
+          aria-expanded="false"
+        >
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="burger-menu">
+        <div class="burger-menu__body">
+          <div class="burger-menu__content">
+            <nav class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list-reset burger-menu__list">
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#heart-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#user-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="container">
+          <ul class="list-reset crumbs">
+            <li class="crumbs__item">
+              <a href="" class="link link_dark crumbs__link">Главная</a>
+            </li>
+            <li class="crumbs__item">
+              <a href="" class="link link_dark crumbs__link">Каталог</a>
+            </li>
+            <li class="crumbs__item">
+              <a
+                href=""
+                class="link link_dark crumbs__link crumbs__link_current"
+              >
+                Дистиллятор для получения гидролата 8л
+              </a>
+            </li>
+          </ul>
+          <div class="hero__item hero__item_slider">
+            <div class="swiper swiper_main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/product.webp" alt="" width="565" height="623" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/product.webp" alt="" width="565" height="623" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/product.webp" alt="" width="565" height="623" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/product.webp" alt="" width="565" height="623" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/product.webp" alt="" width="565" height="623" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/product.webp" alt="" width="565" height="623" />
+                </div>
+              </div>
+            </div>
+            <div thumbsSlider="" class="swiper swiper_thumb">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="img/product_thumb.webp"
+                    alt=""
+                    width="89"
+                    height="99"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/product_thumb.webp"
+                    alt=""
+                    width="89"
+                    height="99"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/product_thumb.webp"
+                    alt=""
+                    width="89"
+                    height="99"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/product_thumb.webp"
+                    alt=""
+                    width="89"
+                    height="99"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/product_thumb.webp"
+                    alt=""
+                    width="89"
+                    height="99"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/product_thumb.webp"
+                    alt=""
+                    width="89"
+                    height="99"
+                  />
+                </div>
+              </div>
+            </div>
+            <strong class="text-reset text hero__have hero__have_true">
+              В наличии
+            </strong>
+            <button class="btn-reset like-btn like-btn_style-dark">
+              <svg class="like-btn__icon">
+                <use xlink:href="img/sprite.svg#heart-icon"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="hero__item hero__item_info">
+            <h1 class="text-reset lead lead_dark">
+              Дистиллятор для получения гидролата 8л
+            </h1>
+            <p class="text-reset text hero__articul">
+              Артикул:
+              <span>CP-0803</span>
+            </p>
+            <p class="text-reset text text_style-dark">
+              Медный дистиллятор «Феникс» станет Вашим надёжным помощником и
+              проводником в мир дистилляции и красоты, с которым Вы легко
+              сможете получать свои любимые гидролаты или алкогольные напитки.
+              Медный дистиллятор «Феникс» станет Вашим надёжным помощником и
+              проводником в мир дистилляции и красоты, с которым Вы легко
+              сможете получать свои любимые гидролаты или алкогольные напитки.
+            </p>
+            <p class="text-reset text">
+              <span class="hero__title-price">Цена</span>
+              <span class="hero__price">12 000 грн</span>
+              <span class="hero__discount">15 000 грн</span>
+            </p>
+            <form class="hero__form">
+              <label class="visually-hidden" for="counter">Количество</label>
+              <input
+                type="number"
+                id="counter"
+                class="input-reset hero__input"
+                placeholder="1"
+                value="1"
+                min="1"
+              />
+              <button type="submit" class="btn-reset button button_style-dark">
+                Купить
+              </button>
+            </form>
+            <div class="share-btns">
+              <h2 class="text-reset share-btns__title">Поделиться</h2>
+              <ul class="list-reset share-btns__list">
+                <li>
+                  <button
+                    class="btn-reset share-btns__btn"
+                    onClick='window.open("https://www.facebook.com/sharer.php?u=АДРЕС_СТРАНИЦЫ","sharer","status=0,toolbar=0,width=650,height=500");'
+                  >
+                    <svg class="share-btns__icon">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="btn-reset share-btns__btn"
+                    onClick='window.open("https://twitter.com/intent/tweet?text=ТАЙТЛ_СТРАНИЦЫ. ОПИСАНИЕ. СССЫЛКА","sharer","status=0,toolbar=0,width=650,height=500");'
+                  >
+                    <svg class="share-btns__icon">
+                      <use xlink:href="img/sprite.svg#twitter"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero__item hero__item_desc">
+            <hr class="hero__line" />
+            <h2 class="text-reset title title_style-dark">Характеристики</h2>
+            <p class="text-reset text text_style-dark">
+              Для всех, кто хочет самостоятельно получать гидролат или
+              дистиллят, и быть уверенным в его качестве – у нас есть готовое и
+              удобное решение. Современный дистиллятор «Феникс» станет для Вас
+              отличным помощником. Полностью медный аппарат изготовлен на
+              собственном производстве, на основании многолетнего опыта работы с
+              медными дистилляторами. Гораздо практичней, чем алькитара, и ни в
+              чём ей не уступающий. Даже наоборот, имеет ряд преимуществ, таких
+              как толщина металла, надёжные, сварные швы, и деревянные ручки,
+              которые не так нагреваются, как латунные. Соединение
+              ароматизационной колонны с емкостью герметично и долговечно.
+              Радиатор данного аппарата расходует в 3 раза меньше воды для
+              охлаждения, в сравнении с алькитарой такого же объёма.
+              Замечательный аппарат прослужит для Вас долгие годы и будет
+              радовать своего владельца гидролатом высокого качества. Оцените
+              все преимущества паровой дистилляции и получайте гидролаты, в
+              натуральности которых Вы можете быть уверенны. Аппарат полностью
+              укомплектован и готов к работе. Объём перегонного куба – 8 литров.
+              Объём колонны – 0,8 литра. Аппарат полностью укомплектован и готов
+              к эксплуатации.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section_bg-color reviews">
+        <div class="container">
+          <h2 class="title title_mgb title_align-center title_style-dark">
+            Отзывы
+          </h2>
+          <div class="swiper-button-prev slider-btn slider-btn_prev"></div>
+          <div class="swiper-button-next slider-btn slider-btn_next"></div>
+          <div class="swiper swiper-mgb-70">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="review">
+                  <img
+                    src="img/profile-img.webp"
+                    alt=""
+                    loading="lazy"
+                    width="63"
+                    height="63"
+                    class="review__img"
+                  />
+                  <h3 class="subtitle subtitle_style-dark review__subtitle">
+                    Иван Иванов
+                  </h3>
+                  <time
+                    class="text text_style-dark text-reset review__time"
+                    datetime="2021-10-20"
+                  >
+                    20.10.2021
+                  </time>
+                  <p class="text text_style-dark text-reset review__text">
+                    Наше оборудование прозводится вручную. Мы постоянно
+                    производим контроль качества произведенной продукции. В то
+                    же время, если в ходе транспортировки или эксплуатации в
+                    течении первых 2 лет происходят поломки, мы всегда находим с
+                    клиентом наиболее удобный вариант решения вопроса.
+                  </p>
+                  <a href="#" class="link link_dark review__article">
+                    Артикул товара : #34893874
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="review">
+                  <img
+                    src="img/profile-img.webp"
+                    alt=""
+                    loading="lazy"
+                    width="63"
+                    height="63"
+                    class="review__img"
+                  />
+                  <h3 class="subtitle subtitle_style-dark review__subtitle">
+                    Иван Иванов
+                  </h3>
+                  <time
+                    class="text text_style-dark text-reset review__time"
+                    datetime="2021-10-20"
+                  >
+                    20.10.2021
+                  </time>
+                  <p class="text text_style-dark text-reset review__text">
+                    Наше оборудование прозводится вручную. Мы постоянно
+                    производим контроль качества произведенной продукции. В то
+                    же время, если в ходе транспортировки или эксплуатации в
+                    течении первых 2 лет происходят поломки, мы всегда находим с
+                    клиентом наиболее удобный вариант решения вопроса.
+                  </p>
+                  <a href="#" class="link link_dark review__article">
+                    Артикул товара : #34893874
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="review">
+                  <img
+                    src="img/profile-img.webp"
+                    alt=""
+                    loading="lazy"
+                    width="63"
+                    height="63"
+                    class="review__img"
+                  />
+                  <h3 class="subtitle subtitle_style-dark review__subtitle">
+                    Иван Иванов
+                  </h3>
+                  <time
+                    class="text text_style-dark text-reset review__time"
+                    datetime="2021-10-20"
+                  >
+                    20.10.2021
+                  </time>
+                  <p class="text text_style-dark text-reset review__text">
+                    Наше оборудование прозводится вручную. Мы постоянно
+                    производим контроль качества произведенной продукции. В то
+                    же время, если в ходе транспортировки или эксплуатации в
+                    течении первых 2 лет происходят поломки, мы всегда находим с
+                    клиентом наиболее удобный вариант решения вопроса.
+                  </p>
+                  <a href="#" class="link link_dark review__article">
+                    Артикул товара : #34893874
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="review">
+                  <img
+                    src="img/profile-img.webp"
+                    alt=""
+                    loading="lazy"
+                    width="63"
+                    height="63"
+                    class="review__img"
+                  />
+                  <h3 class="subtitle subtitle_style-dark review__subtitle">
+                    Иван Иванов
+                  </h3>
+                  <time
+                    class="text text_style-dark text-reset review__time"
+                    datetime="2021-10-20"
+                  >
+                    20.10.2021
+                  </time>
+                  <p class="text text_style-dark text-reset review__text">
+                    Наше оборудование прозводится вручную. Мы постоянно
+                    производим контроль качества произведенной продукции. В то
+                    же время, если в ходе транспортировки или эксплуатации в
+                    течении первых 2 лет происходят поломки, мы всегда находим с
+                    клиентом наиболее удобный вариант решения вопроса.
+                  </p>
+                  <a href="#" class="link link_dark review__article">
+                    Артикул товара : #34893874
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+          <form class="reviews__form">
+            <label class="visually-hidden" for="review">Оставить отзыв</label>
+            <textarea
+              name="review"
+              id="review"
+              class="input-reset reviews__input"
+              placeholder="Оставьте свои впечатления о товаре"
+              rows="6"
+              required
+            ></textarea>
+            <button class="btn-reset button button_style-dark">
+              Оставить отзыв
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="section product-section similar-products">
+        <div class="container">
+          <h2 class="title title_mgb title_align-center title_style-dark">
+            Вам также будет интересно...
+          </h2>
+          <div class="swiper-button-prev slider-btn slider-btn_prev"></div>
+          <div class="swiper-button-next slider-btn slider-btn_next"></div>
+          <div class="swiper swiper-mgb-70">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card-product">
+                  <button
+                    class="btn-reset like-btn like-btn_style-light card-product__like-btn"
+                  >
+                    <svg class="like-btn__icon">
+                      <use xlink:href="img/sprite.svg#heart-icon"></use>
+                    </svg>
+                  </button>
+                  <div class="card-product__item">
+                    <img
+                      class="image"
+                      src="img/card-product-1.webp"
+                      alt=""
+                      loading="lazy"
+                      width="446"
+                      height="491"
+                    />
+                  </div>
+                  <div class="card-product__item">
+                    <h3
+                      class="subtitle subtitle_style-dark card-product__subtitle"
+                    >
+                      Медный чайник с фарфоровой ручкой
+                    </h3>
+                    <p class="card-product__price">
+                      <span>Цена :</span>
+                      <b>1953 грн.</b>
+                    </p>
+                    <a href="#" class="link link_dark card-product__link">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-product">
+                  <button
+                    class="btn-reset like-btn like-btn_style-light card-product__like-btn"
+                  >
+                    <svg class="like-btn__icon">
+                      <use xlink:href="img/sprite.svg#heart-icon"></use>
+                    </svg>
+                  </button>
+                  <div class="card-product__item">
+                    <img
+                      class="image"
+                      src="img/card-product-1.webp"
+                      alt=""
+                      loading="lazy"
+                      width="446"
+                      height="491"
+                    />
+                  </div>
+                  <div class="card-product__item">
+                    <h3
+                      class="subtitle subtitle_style-dark card-product__subtitle"
+                    >
+                      Медный чайник с фарфоровой ручкой
+                    </h3>
+                    <p class="card-product__price">
+                      <span>Цена :</span>
+                      <b>1953 грн.</b>
+                    </p>
+                    <a href="#" class="link link_dark card-product__link">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-product">
+                  <button
+                    class="btn-reset like-btn like-btn_style-light card-product__like-btn"
+                  >
+                    <svg class="like-btn__icon">
+                      <use xlink:href="img/sprite.svg#heart-icon"></use>
+                    </svg>
+                  </button>
+                  <div class="card-product__item">
+                    <img
+                      class="image"
+                      src="img/card-product-1.webp"
+                      alt=""
+                      loading="lazy"
+                      width="446"
+                      height="491"
+                    />
+                  </div>
+                  <div class="card-product__item">
+                    <h3
+                      class="subtitle subtitle_style-dark card-product__subtitle"
+                    >
+                      Медный чайник с фарфоровой ручкой
+                    </h3>
+                    <p class="card-product__price">
+                      <span>Цена :</span>
+                      <b>1953 грн.</b>
+                    </p>
+                    <a href="#" class="link link_dark card-product__link">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-product">
+                  <button
+                    class="btn-reset like-btn like-btn_style-light card-product__like-btn"
+                  >
+                    <svg class="like-btn__icon">
+                      <use xlink:href="img/sprite.svg#heart-icon"></use>
+                    </svg>
+                  </button>
+                  <div class="card-product__item">
+                    <img
+                      class="image"
+                      src="img/card-product-1.webp"
+                      alt=""
+                      loading="lazy"
+                      width="446"
+                      height="491"
+                    />
+                  </div>
+                  <div class="card-product__item">
+                    <h3
+                      class="subtitle subtitle_style-dark card-product__subtitle"
+                    >
+                      Медный чайник с фарфоровой ручкой
+                    </h3>
+                    <p class="card-product__price">
+                      <span>Цена :</span>
+                      <b>1953 грн.</b>
+                    </p>
+                    <a href="#" class="link link_dark card-product__link">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <a class="logo" tabindex="-1">
+            <img
+              class="logo__img"
+              src="img/logo.webp"
+              alt="Логотип: Copper Pro"
+              width="160"
+              height="43"
+            />
+          </a>
+          <small class="text-reset text text_style-light copyright">
+            © 2024 “Copper Pro”
+            <br />
+            Все права защищенны
+          </small>
+          <a href="#" class="link link_light footer__link">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Навигация
+            </h3>
+            <div class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Каталог
+            </h3>
+            <div class="navigation catalog-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для эфирных масел
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для гидролатов
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Медная посуда
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Контакты
+            </h3>
+            <div class="navigation contacts-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Бажана 8-Б, Киев, 02132 Украина
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="tel:+380969906756"
+                    class="link link_light navigation__link"
+                  >
+                    +38 (096) 990 67 56
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="mailto:a.alambik@gmail.com"
+                    class="link link_light navigation__link"
+                  >
+                    a.alambik@gmail.com
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <ul class="list-reset social">
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#body" class="scroll-top scroll-top_vertical-mode">вверх</a>
+    </footer>
+  </body>
+</html>

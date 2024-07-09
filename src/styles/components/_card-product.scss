@@ -5,14 +5,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    padding: rem(17) rem(10);
-    background-color: var(--color-white);
-  }
-
-  &__icon {
-    width: rem(30);
-    height: rem(30);
-    stroke: var(--color-black);
   }
 
   &__item:not(:last-child) {

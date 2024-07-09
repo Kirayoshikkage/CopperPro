@@ -9,6 +9,24 @@
     box-shadow: rem(4) rem(4) rem(30) rem(4) rgba(0, 0, 0, 0.2);
   }
 
+  &__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    gap: 1rem;
+  }
+
+  &__input {
+    flex: 0 1 rem(500);
+    border-bottom: rem(1) solid var(--color-black);
+    padding: 0 1rem rem(8);
+    resize: none;
+  }
+
+  .button {
+    padding: 1rem 3rem;
+  }
+
   @include mobile {
     .swiper-slide {
       padding: 1rem;
@@ -23,8 +41,8 @@
     }
 
     .slider-btn {
-      bottom: rem(100);
       top: auto;
+      bottom: rem(100);
     }
   }
 }

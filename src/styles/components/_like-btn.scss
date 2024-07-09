@@ -1,0 +1,26 @@
+.like-btn {
+  padding: rem(17) rem(10);
+
+  &_style-dark {
+    background-color: var(--color-black);
+
+    .like-btn__icon {
+      fill: var(--color-white);
+      stroke: var(--color-white);
+    }
+  }
+
+  &_style-light {
+    background-color: var(--color-white);
+
+    .like-btn__icon {
+      fill: var(--color-black);
+      stroke: var(--color-black);
+    }
+  }
+
+  &__icon {
+    width: rem(30);
+    height: rem(30);
+  }
+}

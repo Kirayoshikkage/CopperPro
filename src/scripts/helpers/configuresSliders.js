@@ -1,4 +1,6 @@
-import Swiper, { Navigation, A11y, Keyboard } from 'swiper';
+import Swiper, { Navigation, A11y, Keyboard, Thumbs } from 'swiper';
+
+// Thumbs
 
 function defaultSliderWithItems(selectorContainer) {
   const slider = `${selectorContainer} .swiper`;
@@ -44,6 +46,11 @@ const recomendationSlider = defaultSliderWithItems.bind(this, '.recomendation');
 
 const discountsSlider = defaultSliderWithItems.bind(this, '.discounts');
 
+const similarProductsSlider = defaultSliderWithItems.bind(
+  this,
+  '.similar-products'
+);
+
 function reviewsSlider() {
   const slider = `.reviews .swiper`;
   const buttonNext = `.reviews .swiper-button-next`;
@@ -79,10 +86,34 @@ function reviewsSlider() {
   });
 }
 
+function pageProductSlider() {
+  const swiperThumb = new Swiper('.hero .swiper_thumb', {
+    modules: [Keyboard, A11y],
+    keyboard: {
+      enabled: true,
+    },
+    spaceBetween: 16,
+    slidesPerView: 6,
+    watchSlidesProgress: true,
+  });
+  // eslint-disable-next-line no-unused-vars
+  const swiperMain = new Swiper('.hero .swiper_main', {
+    modules: [Keyboard, A11y, Thumbs],
+    keyboard: {
+      enabled: true,
+    },
+    thumbs: {
+      swiper: swiperThumb,
+    },
+  });
+}
+
 export {
   bestSalesSlider,
   newItemSlider,
   recomendationSlider,
   discountsSlider,
   reviewsSlider,
+  pageProductSlider,
+  similarProductsSlider,
 };

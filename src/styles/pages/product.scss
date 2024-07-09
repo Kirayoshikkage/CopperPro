@@ -14,24 +14,41 @@
 @import '../components/lead';
 @import '../components/section';
 @import '../components/title';
-@import '../components/category-card';
 @import '../components/subtitle';
-@import '../components/card-product';
-@import '../components/like-btn';
-@import '../components/slider-btn';
-@import '../components/product-section';
-@import '../components/review';
 @import '../components/text';
 @import '../components/social';
 @import '../components/scroll-top';
+@import '../components/crumbs';
+@import '../components/share-btns';
+@import '../components/like-btn';
+@import '../components/button';
+@import '../components/review';
+@import '../components/product-section';
+@import '../components/slider-btn';
+@import '../components/card-product';
 
 // Sections
 
 @import '../section/header';
 @import '../section/burger-menu';
-@import '../section/index-hero';
-@import '../section/our-products';
-@import '../section/promo';
+@import '../section/product-hero';
 @import '../section/reviews';
-@import '../section/advantages';
 @import '../section/footer';
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.lead {
+  font-size: rem(50);
+}
