@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link href="styles/basket.css" rel="stylesheet" />
+    <script src="scripts/basket.js" defer></script>
+  </head>
+
+  <body id="body">
+    <header class="header header_bg">
+      <div class="container">
+        <a class="logo" tabindex="-1">
+          <img
+            class="logo__img"
+            src="img/logo.webp"
+            alt="Логотип: Copper Pro"
+            width="160"
+            height="43"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="list-reset navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="link link_light navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#heart-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="store-link store-link_style-light">
+              <svg class="store-link__icon">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="btn-reset burger-trigger"
+          type="button"
+          aria-expanded="false"
+        >
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+          <span class="burger-trigger__item"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="burger-menu">
+        <div class="burger-menu__body">
+          <div class="burger-menu__content">
+            <nav class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list-reset burger-menu__list">
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#heart-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#user-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="store-link store-link_style-light">
+                  <svg class="store-link__icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="container">
+          <ul class="list-reset crumbs">
+            <li class="crumbs__item">
+              <a href="" class="link link_dark crumbs__link">Главная</a>
+            </li>
+            <li class="crumbs__item">
+              <a
+                href=""
+                class="link link_dark crumbs__link crumbs__link_current"
+              >
+                Корзина
+              </a>
+            </li>
+          </ul>
+          <h1 class="text-reset lead lead_large lead_dark">Корзина</h1>
+          <div class="hero__content">
+            <div class="hero__item">
+              <table class="orders">
+                <tr class="orders__line orders__line_headers">
+                  <th class="text orders__cell orders__cell_th">Товар</th>
+                  <th class="text orders__cell orders__cell_th">Количество</th>
+                  <th class="text orders__cell orders__cell_th">Цена</th>
+                </tr>
+                <tr class="orders__line orders__line_order">
+                  <td class="orders__cell orders__cell_name">
+                    <img
+                      src="img/product_thumb.webp"
+                      width="89"
+                      height="99"
+                      alt=""
+                      class="orders__img"
+                    />
+                    <a
+                      href=""
+                      class="text-reset text text_style-dark orders__name"
+                    >
+                      Дистиллятор для получения гидролата 8л
+                    </a>
+                  </td>
+                  <td class="orders__cell orders__cell_amount">
+                    <p class="text-reset text text_style-dark orders__amount">
+                      2 шт.
+                    </p>
+                  </td>
+                  <td class="orders__cell orders__cell_price">
+                    <p class="text-reset text text_style-dark orders__discount">
+                      7 000 грн
+                    </p>
+                    <p class="text-reset text text_style-dark orders__price">
+                      5 000 грн
+                    </p>
+                    <button class="btn-reset orders__del">
+                      <svg class="orders__icon">
+                        <use xlink:href="img/sprite.svg#trash"></use>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="orders__line orders__line_order">
+                  <td class="orders__cell orders__cell_name">
+                    <img
+                      src="img/product_thumb.webp"
+                      width="89"
+                      height="99"
+                      alt=""
+                      class="orders__img"
+                    />
+                    <a
+                      href=""
+                      class="text-reset text text_style-dark orders__name"
+                    >
+                      Дистиллятор для получения гидролата 8л
+                    </a>
+                  </td>
+                  <td class="orders__cell orders__cell_amount">
+                    <p class="text-reset text text_style-dark orders__amount">
+                      2 шт.
+                    </p>
+                  </td>
+                  <td class="orders__cell orders__cell_price">
+                    <p class="text-reset text text_style-dark orders__discount">
+                      7 000 грн
+                    </p>
+                    <p class="text-reset text text_style-dark orders__price">
+                      5 000 грн
+                    </p>
+                    <button class="btn-reset orders__del">
+                      <svg class="orders__icon">
+                        <use xlink:href="img/sprite.svg#trash"></use>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <a href="#" class="link link_style-btn">Назад к покупкам</a>
+            </div>
+            <div class="hero__item">
+              <h2 class="text-reset title title_style-dark">Итого</h2>
+              <p class="text-reset text text_style-dark hero__price">
+                10 953 грн
+              </p>
+              <hr class="hero__line" />
+              <p class="text-reset text text_style-dark hero__delivery-terms">
+                У нас бесплатная доставка!
+              </p>
+              <a href="#" class="link link_style-btn hero__order-btn">
+                Оформить заказ
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <a class="logo" tabindex="-1">
+            <img
+              class="logo__img"
+              src="img/logo.webp"
+              alt="Логотип: Copper Pro"
+              width="160"
+              height="43"
+            />
+          </a>
+          <small class="text-reset text text_style-light copyright">
+            © 2024 “Copper Pro”
+            <br />
+            Все права защищенны
+          </small>
+          <a href="#" class="link link_light footer__link">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Навигация
+            </h3>
+            <div class="navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Каталог
+            </h3>
+            <div class="navigation catalog-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для эфирных масел
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Для гидролатов
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Медная посуда
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__group">
+            <h3 class="subtitle footer__subtitle subtitle_style-light">
+              Контакты
+            </h3>
+            <div class="navigation contacts-navigation">
+              <ul class="list-reset navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="link link_light navigation__link">
+                    Бажана 8-Б, Киев, 02132 Украина
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="tel:+380969906756"
+                    class="link link_light navigation__link"
+                  >
+                    +38 (096) 990 67 56
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="mailto:a.alambik@gmail.com"
+                    class="link link_light navigation__link"
+                  >
+                    a.alambik@gmail.com
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <ul class="list-reset social">
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="img/sprite.svg#inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#body" class="scroll-top scroll-top_vertical-mode">вверх</a>
+    </footer>
+  </body>
+</html>

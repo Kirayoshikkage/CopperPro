@@ -1,0 +1,104 @@
+.hero {
+  padding: rem(80) 0;
+
+  .crumbs {
+    margin: 0 0 rem(40);
+  }
+
+  .lead {
+    margin: 0 0 rem(40);
+
+    @include mobile {
+      font-size: rem(50);
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: rem(80);
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    &:first-child {
+      flex: 1 1 calc(70% - rem(40));
+    }
+
+    &:last-child {
+      position: relative;
+      flex: 1 1 calc(30% - rem(40));
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: rem(-48);
+        width: rem(164);
+        height: rem(176);
+        background-image: url('../img/basket.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+
+        @include mobile {
+          width: rem(124);
+          height: rem(136);
+        }
+      }
+    }
+  }
+
+  .orders {
+    margin: 0 0 rem(40);
+
+    &__line {
+      grid-template-columns: 65% 17.5% 17.5%;
+    }
+  }
+
+  &__price {
+    font-weight: 300;
+    font-size: rem(32);
+
+    @include mobile {
+      font-size: rem(24);
+    }
+  }
+
+  &__line {
+    margin: rem(20) 0;
+    opacity: 0.5;
+  }
+
+  &__delivery-terms {
+    position: relative;
+    margin: rem(20) 0;
+    padding-right: rem(60);
+    color: var(--color-gray);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: rem(48);
+      height: rem(25);
+      background-image: url('../img/car.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__order-btn {
+    @include lg {
+      padding: 1rem 2rem;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}
