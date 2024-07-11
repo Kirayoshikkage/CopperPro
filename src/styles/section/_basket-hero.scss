@@ -57,6 +57,27 @@
 
     &__line {
       grid-template-columns: 65% 17.5% 17.5%;
+
+      @include small-tablet {
+        grid-template-columns: 1fr 1fr;
+        gap: rem(16);
+
+        &_headers {
+          @include visually-hidden;
+        }
+      }
+    }
+
+    &__cell {
+      @include small-tablet {
+        &_name {
+          grid-column: 1/3;
+        }
+
+        &_price {
+          justify-self: flex-end;
+        }
+      }
     }
   }
 
