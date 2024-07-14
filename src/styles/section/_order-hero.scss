@@ -56,43 +56,18 @@
     }
   }
 
-  &__group {
-    display: block;
-    margin: 0 0 rem(32);
-    border: none;
-    padding: 0;
-  }
-
-  &__legend {
-    margin: 0 0 rem(24);
-    font-size: rem(26);
-    color: var(--color-black);
-
-    &::before {
-      counter-increment: legend;
-      content: counter(legend);
-      display: inline-block;
-      margin: 0 1.5rem 0 0;
-      padding: 0.5rem 1rem;
-      color: var(--color-white);
-      background-color: var(--color-black);
+  .form {
+    &__legend {
+      &::before {
+        counter-increment: legend;
+        content: counter(legend);
+        display: inline-block;
+        margin: 0 1.5rem 0 0;
+        padding: 0.5rem 1rem;
+        color: var(--color-white);
+        background-color: var(--color-black);
+      }
     }
-  }
-
-  &__label {
-    display: block;
-    margin: 0 0 1rem;
-  }
-
-  &__input {
-    margin: 0 0 rem(24);
-    border-bottom: rem(1) solid var(--color-gray);
-    padding: 0 0 rem(12);
-    width: 100%;
-  }
-
-  &__radio-btn {
-    margin: 0 0.5rem 0 0;
   }
 
   &__delivery-terms {
@@ -104,10 +79,5 @@
     font-weight: 700;
     font-size: rem(32);
     color: rgb(103, 2, 2);
-  }
-
-  .button {
-    padding: 1rem 2rem;
-    width: 100%;
   }
 }

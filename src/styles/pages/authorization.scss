@@ -16,16 +16,14 @@
 @import '../components/text';
 @import '../components/social';
 @import '../components/scroll-top';
-@import '../components/crumbs';
-@import '../components/orders';
-@import '../components/button';
 @import '../components/form';
+@import '../components/button';
 
 // Sections
 
 @import '../section/header';
 @import '../section/burger-menu';
-@import '../section/order-hero';
+@import '../section/auth-hero';
 @import '../section/footer';
 
 body,

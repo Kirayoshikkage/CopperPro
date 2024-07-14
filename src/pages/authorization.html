@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
-    <link href="styles/order.css" rel="stylesheet" />
-    <script src="scripts/order.js" defer></script>
+    <link href="styles/authorization.css" rel="stylesheet" />
+    <script src="scripts/authorization.js" defer></script>
   </head>
 
   <body id="body">
@@ -131,246 +131,39 @@
           </div>
         </div>
       </div>
-      <section class="hero">
+      <section class="section hero">
         <div class="container">
-          <h1 class="text-reset lead lead_large lead_dark">Оформить заказ</h1>
           <div class="hero__content">
-            <div class="hero__item">
-              <table class="orders">
-                <tr class="orders__line orders__line_headers">
-                  <th class="text orders__cell orders__cell_th">Товар</th>
-                  <th class="text orders__cell orders__cell_th">Количество</th>
-                  <th class="text orders__cell orders__cell_th">Цена</th>
-                </tr>
-                <tr class="orders__line orders__line_order">
-                  <td class="orders__cell orders__cell_name">
-                    <img
-                      src="img/product_thumb.webp"
-                      width="89"
-                      height="99"
-                      alt=""
-                      class="orders__img"
-                    />
-                    <a
-                      href=""
-                      class="text-reset text text_style-dark orders__name"
-                    >
-                      Дистиллятор для получения гидролата 8л
-                    </a>
-                  </td>
-                  <td class="orders__cell orders__cell_amount">
-                    <p class="text-reset text text_style-dark orders__amount">
-                      2 шт.
-                    </p>
-                  </td>
-                  <td class="orders__cell orders__cell_price">
-                    <p class="text-reset text text_style-dark orders__discount">
-                      7 000 грн
-                    </p>
-                    <p class="text-reset text text_style-dark orders__price">
-                      5 000 грн
-                    </p>
-                    <button class="btn-reset orders__del">
-                      <svg class="orders__icon">
-                        <use xlink:href="img/sprite.svg#trash"></use>
-                      </svg>
-                    </button>
-                  </td>
-                </tr>
-                <tr class="orders__line orders__line_order">
-                  <td class="orders__cell orders__cell_name">
-                    <img
-                      src="img/product_thumb.webp"
-                      width="89"
-                      height="99"
-                      alt=""
-                      class="orders__img"
-                    />
-                    <a
-                      href=""
-                      class="text-reset text text_style-dark orders__name"
-                    >
-                      Дистиллятор для получения гидролата 8л
-                    </a>
-                  </td>
-                  <td class="orders__cell orders__cell_amount">
-                    <p class="text-reset text text_style-dark orders__amount">
-                      2 шт.
-                    </p>
-                  </td>
-                  <td class="orders__cell orders__cell_price">
-                    <p class="text-reset text text_style-dark orders__discount">
-                      7 000 грн
-                    </p>
-                    <p class="text-reset text text_style-dark orders__price">
-                      5 000 грн
-                    </p>
-                    <button class="btn-reset orders__del">
-                      <svg class="orders__icon">
-                        <use xlink:href="img/sprite.svg#trash"></use>
-                      </svg>
-                    </button>
-                  </td>
-                </tr>
-                <tr class="orders__line orders__line_order">
-                  <td class="orders__cell orders__cell_name">
-                    <img
-                      src="img/product_thumb.webp"
-                      width="89"
-                      height="99"
-                      alt=""
-                      class="orders__img"
-                    />
-                    <a
-                      href=""
-                      class="text-reset text text_style-dark orders__name"
-                    >
-                      Дистиллятор для получения гидролата 8л
-                    </a>
-                  </td>
-                  <td class="orders__cell orders__cell_amount">
-                    <p class="text-reset text text_style-dark orders__amount">
-                      2 шт.
-                    </p>
-                  </td>
-                  <td class="orders__cell orders__cell_price">
-                    <p class="text-reset text text_style-dark orders__discount">
-                      7 000 грн
-                    </p>
-                    <p class="text-reset text text_style-dark orders__price">
-                      5 000 грн
-                    </p>
-                    <button class="btn-reset orders__del">
-                      <svg class="orders__icon">
-                        <use xlink:href="img/sprite.svg#trash"></use>
-                      </svg>
-                    </button>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="hero__item">
-              <form class="form">
-                <fieldset class="form__group">
-                  <legend class="form__legend">Личные данные</legend>
-                  <label class="form__label" for="name">Введите имя</label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Александр"
-                    id="name"
-                    class="input-reset form__input"
-                  />
-                  <label class="form__label" for="surname">
-                    Введите фамилию
-                  </label>
-                  <input
-                    type="text"
-                    name="surname"
-                    placeholder="Клаев"
-                    id="surname"
-                    class="input-reset form__input"
-                  />
-                  <label class="form__label" for="tel">
-                    Введите номер телефона
-                  </label>
-                  <input
-                    type="tel"
-                    name="tel"
-                    placeholder="8 (867) 769 98 20"
-                    id="tel"
-                    class="input-reset form__input"
-                  />
-                  <label class="form__label" for="email">Введите почту</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="example@mail.ru"
-                    id="email"
-                    class="input-reset form__input"
-                  />
-                  <label class="form__label" for="address">
-                    Введите адрес доставки
-                  </label>
-                  <input
-                    type="text"
-                    name="address"
-                    placeholder="Россия, обл. Новосибирская, г. Новосибирск, ул. Фрунзе, д. 135, кв. 1"
-                    id="address"
-                    class="input-reset form__input"
-                  />
-                </fieldset>
-                <fieldset class="form__group">
-                  <legend class="form__legend">Доставка</legend>
-                  <label class="form__label" for="delivery_0">
-                    <input
-                      type="radio"
-                      name="delivery"
-                      id="delivery_0"
-                      value="0"
-                      class="form__radio-btn"
-                    />
-                    Самовывоз (Бажана 8-Б, Киев, 02132 Украина)
-                  </label>
-                  <label class="form__label" for="delivery_1">
-                    <input
-                      type="radio"
-                      name="delivery"
-                      id="delivery_1"
-                      value="1"
-                      class="form__radio-btn"
-                    />
-                    Почта
-                  </label>
-                  <p class="text-reset text hero__delivery-terms">
-                    Доставка будет бесплатной!
-                  </p>
-                </fieldset>
-                <fieldset class="form__group">
-                  <legend class="form__legend">Оплата</legend>
-                  <label class="form__label" for="pay_0">
-                    <input
-                      type="radio"
-                      name="pay"
-                      id="pay_0"
-                      value="0"
-                      class="form__radio-btn"
-                    />
-                    При получении (наличный)
-                  </label>
-                  <label class="form__label" for="pay_1">
-                    <input
-                      type="radio"
-                      name="pay"
-                      id="pay_1"
-                      value="1"
-                      class="form__radio-btn"
-                    />
-                    При получении (безналичный)
-                  </label>
-                </fieldset>
-                <fieldset class="form__group">
-                  <legend class="form__legend">Итого</legend>
-                  <p class="text-reset hero__price">17 367 грн</p>
-                  <label for="promo" class="form__label">
-                    Введите промокод
-                  </label>
-                  <input
-                    type="text"
-                    name="promo"
-                    id="promo"
-                    placeholder="4CA58"
-                    class="input-reset form__input"
-                  />
-                </fieldset>
-                <button
-                  type="submit"
-                  class="btn-reset button button_style-dark form__button"
-                >
-                  Оформить заказ
-                </button>
-              </form>
-            </div>
+            <h1 class="lead lead_dark">Авторизация</h1>
+            <form class="form">
+              <label class="form__label" for="email">Введите почту</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@mail.ru"
+                id="email"
+                class="input-reset form__input"
+              />
+              <label class="form__label" for="password">Введите пароль</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="s1Adf3"
+                id="password"
+                class="input-reset form__input"
+              />
+              <a class="link link_dark hero__reset" href="">Забыли пароль?</a>
+              <button
+                type="submit"
+                class="btn-reset button button_style-dark form__button"
+              >
+                Войти
+              </button>
+            </form>
+            <a href="" class="link link_style-btn hero__register">
+              <span>Нету аккаунта?</span>
+              <span>Регистрация</span>
+            </a>
           </div>
         </div>
       </section>

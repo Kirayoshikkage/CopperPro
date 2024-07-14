@@ -1,0 +1,30 @@
+.hero {
+  &__content {
+    margin: 0 auto;
+    max-width: rem(500);
+  }
+
+  .lead {
+    margin: 0 0 rem(42);
+    text-align: center;
+  }
+
+  .form {
+    margin: 0 0 rem(40);
+  }
+
+  //   ref
+  &__auth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 2rem;
+    max-width: 100%;
+    font-weight: 300;
+    gap: 1.5rem;
+
+    span:last-child {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.form {
+  &__group {
+    display: block;
+    margin: 0 0 rem(32);
+    border: none;
+    padding: 0;
+  }
+
+  &__legend {
+    margin: 0 0 rem(24);
+    font-size: rem(26);
+    color: var(--color-black);
+  }
+
+  &__label {
+    display: block;
+    margin: 0 0 1rem;
+  }
+
+  &__input {
+    margin: 0 0 rem(24);
+    border-bottom: rem(1) solid var(--color-gray);
+    padding: 0 0 rem(12);
+    width: 100%;
+  }
+
+  &__radio-btn {
+    margin: 0 0.5rem 0 0;
+  }
+
+  &__button {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+}

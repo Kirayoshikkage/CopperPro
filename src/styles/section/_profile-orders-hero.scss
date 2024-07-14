@@ -1,0 +1,45 @@
+.hero {
+  .container > *:not(:last-child) {
+    margin: 0 0 rem(40);
+  }
+
+  .lead {
+    font-size: rem(50);
+  }
+
+  .orders {
+    &__line {
+      grid-template-columns: 1fr repeat(5, 12.5%);
+      gap: 0.5rem;
+
+      @include tablet {
+        align-items: end;
+        grid-template-columns: 1fr auto;
+        gap: rem(16);
+
+        &_headers {
+          @include visually-hidden;
+        }
+      }
+    }
+
+    &__cell {
+      @include tablet {
+        &:nth-child(even) {
+          justify-self: flex-end;
+        }
+      }
+
+      @include mobile {
+        &_name {
+          grid-column: 1/3;
+        }
+
+        &_amount {
+          justify-self: flex-start !important;
+          order: 1;
+        }
+      }
+    }
+  }
+}

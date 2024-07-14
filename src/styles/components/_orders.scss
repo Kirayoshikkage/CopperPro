@@ -67,4 +67,13 @@
     font-weight: 700;
     font-size: rem(22);
   }
+
+  &__track {
+    display: block;
+    overflow: hidden;
+    max-width: rem(114);
+    white-space: nowrap;
+    text-decoration: underline;
+    text-overflow: ellipsis;
+  }
 }

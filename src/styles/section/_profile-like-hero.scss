@@ -1,0 +1,9 @@
+.hero {
+  .container > *:not(:last-child) {
+    margin: 0 0 rem(40);
+  }
+
+  .lead {
+    font-size: rem(50);
+  }
+}
