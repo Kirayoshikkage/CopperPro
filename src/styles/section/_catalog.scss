@@ -1,3 +1,9 @@
 .catalog {
   padding: rem(40) 0 rem(80);
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(48) rem(32);
+  }
 }
